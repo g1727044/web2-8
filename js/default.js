@@ -5,7 +5,9 @@ var separate_time = function(time){
   var days  = Math.floor(time / 1000 / 60 / 60 / 24);
   return [sec, min, hours, days];
 }
-
+document.getElementById('form').select.onchange = function(){
+  location.href = document.getElementById('form').select.value;
+}
 var update = function(){
   var now = new Date();
   var target = new Date(2020,7,24,0,0,0,0);
