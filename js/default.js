@@ -55,3 +55,8 @@ var update = function(){
     counter[0] + '秒'; 
   refresh();// タイマーを起動
 }
+
+var refresh= function(){
+  setTimeout(update, 1000);//1000ミリ秒待ってからupdateを実行
+}
+update();// 最初の更新
